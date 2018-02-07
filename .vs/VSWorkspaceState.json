@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\pages",
+    "\\src\\pages\\archived-todos",
+    "\\src\\providers",
+    "\\src\\providers\\todo"
+  ],
+  "SelectedNode": "\\src\\pages\\archived-todos\\archived-todos.ts",
+  "PreviewInSolutionExplorer": false
+}

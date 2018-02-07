@@ -6,25 +6,34 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { TodoProvider } from '../providers/todo/todo';
+import { HttpModule } from "@angular/http";
+import { HttpClientModule } from '@angular/common/http';
+import { ArchivedTodosPage } from '../pages/archived-todos/archived-todos';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    ArchivedTodosPage
   ],
   imports: [
     BrowserModule,
+    HttpModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    ArchivedTodosPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    TodoProvider
   ]
 })
 export class AppModule {}
